@@ -1,0 +1,33 @@
+body {
+	background-color: lavenderblush;
+}
+
+h1 {
+	color: purple;
+	text-align: center;
+	font-size: 48px;
+}
+
+p {
+	color: gray;
+	text-align: center;
+	padding: 20px;
+}
+
+.hero-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	padding: 40px;
+}
+
+div {
+	text-align: center;
+	padding: 50px;
+}
