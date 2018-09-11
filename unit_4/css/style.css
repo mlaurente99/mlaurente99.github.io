@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+
+.hero-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+.navigation {
+	display: block;
+	color: #15504e;
+	white-space: nowrap;
+	font-family: helvetica neue;
+	font-size: 1.2em
+}
+
+.contact {
+	display: block;
+	color: #735944;
+	white-space: nowrap;
+	font-family: helvetica neue;
+	font-size: 1.2em
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	color: #15504e;
+	text-align: center;
+	font-family: 'Playfair Display', bold;
+	font-size: 48px;
+}
+
+h2 {
+	color: #c3af7c;
+	text-align: center;
+	font-family: helvetica neue, light;
+	font-size: 1.5em;
+}
+
+h3 {
+	color: #735944;
+	text-align: center;
+	font-size: 2em;
+}
+
+p {
+	color: gray;
+	text-align: center;
+	font-family: helvetica neue, light;
+	line-height: 1.5em;
+	padding: 20px;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	padding: 40px;
+}
+
+div {
+	text-align: center;
+	padding: 50px;
+}
