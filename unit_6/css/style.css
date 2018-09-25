@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body,html {
 	height: 100%;
 }
@@ -7,8 +13,8 @@ body,html {
 .hero-image {
 	background-image: url(../images/hero_cupcakes2.jpg);
 	width: 100%;
-	height: 80%;
-	background-position: center;
+	height: 80vh;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -48,7 +54,7 @@ nav a {
 .contact {
 	display: block;
 	background-color: #c3af7c;
-	height: 4%;
+	height: 16%;
 	width: 100%;
 	white-space: nowrap;
 	font-family: helvetica neue;
@@ -59,9 +65,11 @@ nav a {
 .contactus {
 	color: white;
 	text-decoration: none;
+	font-size: 2em;
 }
 
 header {
+	padding-top: 10px;
 }
 
 article {
@@ -70,6 +78,8 @@ article {
 
 footer {
 	background-color: #15504e;
+	text-align: right;
+	color: white;
 	border: 1px black solid;
 	padding: 20px;
 	clear: both;
@@ -80,6 +90,7 @@ body {
 }
 
 h1 {
+	padding-left: 10px;
 	color: #c3af7c;
 	font-family: 'Playfair Display', bold;
 	font-size: 48px;
@@ -129,4 +140,20 @@ ul {
 div {
 	text-align: center;
 	padding: 50px;
+}
+
+.button {
+	background-color: #15504e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.button:hover {
+	background-color: #cae8de;
+    color: #15504e;
 }
