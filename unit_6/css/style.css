@@ -54,7 +54,6 @@ nav a {
 .contact {
 	display: block;
 	background-color: #c3af7c;
-	height: 16%;
 	width: 100%;
 	white-space: nowrap;
 	font-family: helvetica neue;
@@ -123,6 +122,7 @@ p {
 	float: left;
 	width: 33.33%;
 }
+
 
 .row:after {
 	content: "";
