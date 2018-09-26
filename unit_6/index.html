@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>SUGAR RUSH</title>
 </head>
-<header>
-	<h1>SUGAR RUSH</h1>
+<body>
+	<header>
+		<h1>SUGAR RUSH</h1>
 		<nav>
 			<a href="#products">products</a>
 			<a href="#email">contact</a>
-		</ul>
 		</nav>
-</header>
+	</header>
 
 	<div class="hero-image">
 		<div class="hero-text">
@@ -24,18 +24,14 @@
 	  	<img class="hero-image" src="images/hero_cupcakes.jpg"
 	    alt="lots of pink cupcakes"
 	    title="sugar rush pink cupcakes"> -->
-	<body>	
-	<article id="products">
-		<p>Based in NJ, we sell custom baked goods at a very reasonable price. We bake cakes, cupcakes and other goodies for all occassions! 
-	Check out some products  that we have made below:</p>
-	
-		<div class="row">
-			<div class="column"><h3>Cakes</h3>
-			<img src="images/cakes.jpg"
-			alt="white cake"
-	    	title="sugar rush white cake"></div>
-			
-			<div class="column"><h3>Cupcakes</h3>
+	<section id="products">
+		<h2>Based in NJ, we sell custom baked goods at a very reasonable price. We bake cakes, cupcakes and other goodies for all occassions!</h2>
+		<p>Check out some products  that we have made below:</p>
+		<div class="column">
+			<h3>Cakes</h3>
+			<img src="images/cakes.jpg" alt="white cake" title="sugar rush white cake">
+		</div>
+		<div class="column"><h3>Cupcakes</h3>
 			<img src="images/cupcakes.jpg"
 			alt="sugar cupcake with pink icing"
 	        title="sugar rush sugar cupcakes">
@@ -46,37 +42,37 @@
 			alt="donuts"
 	    	title="sugar rush donuts and other baked goods">
 	    	</div>
-		</div>
 
-			<p>Would you like to see more? Visit our <a href="https://www.instagram.com/sugar.rushhh/?utm_source=ig_profile_share&igshid=17h5b35orzs0p">instagram account</a>
-			</p>
-		</article>
+			<p>Would you like to see more? Visit our <a href="https://www.instagram.com/sugar.rushhh/?utm_source=ig_profile_share&igshid=17h5b35orzs0p">instagram account</a></p>
+		</section>
 
 
 
-	<!-- <ul>
-		<li><h3>Cakes<h3></li>
-		<img src="images/cakes.jpg"
-		alt="white cake"
-    	title="sugar rush white cake">
-		<li><h3>Cupcakes</h3></li>
-		<img src="images/cupcakes.jpg"
-		alt="sugar cupcake with pink icing"
-        title="sugar rush sugar cupcakes">
-		<li><h3>Other</h3></li>
-		<img src="images/donuts.jpg"
-		alt="other baked goods"
-    	title="sugar rush donuts and other baked goods">
-		</ul> -->
 	
 	<div id="email" class="contact">
-	<h2>Do you have an upcoming occassion that you need our services?</h2>
-	<br><br>
-	<a class="contactus button" href="mailto:indulge@gmail.com?subject=Hello Sugar Rush">Contact Us</a>
+		<h2>Do you have an upcoming occassion that you need our services?</h2>
+		<a class="contactus button" href="mailto:indulge@gmail.com">Contact Us</a>
 	</div>
-</body>
 	<footer>
 		<p>2018 Sugar Rush</p>
 		
 	</footer>
+	<script>
+			$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
+</body>
 </html>
