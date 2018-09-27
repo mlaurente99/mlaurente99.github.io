@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-size: 16px;
+}
+
 body,html {
 	height: 100%;
 }
@@ -31,7 +35,7 @@ body,html {
 
 nav {
 	display: block;
-	color: #15504e;
+	color: #508582;
 	white-space: nowrap;
 	font-family: helvetica neue;
 	font-size: 1.2em;
@@ -41,7 +45,7 @@ nav {
 nav a {
 	text-decoration: none;
 	display: inline-block;
-	color: #15504e;
+	color: #508582;
 	white-space: nowrap;
 	font-family: helvetica neue;
 	font-size: 1.2em;
@@ -52,20 +56,14 @@ nav a {
 
 
 .contact {
-	display: block;
-	background-color: #c3af7c;
-	width: 100%;
-	white-space: nowrap;
+	background-color: #F2DFE1;
 	font-family: helvetica neue;
 	font-size: 1.2em;
+	text-align: center;
+	padding: 50px;
 	clear: both;
 }
 
-.contactus {
-	color: white;
-	text-decoration: none;
-	font-size: 2em;
-}
 
 header {
 	padding-top: 10px;
@@ -76,10 +74,9 @@ article {
 }
 
 footer {
-	background-color: #15504e;
+	background-color: #E3BB5D;
 	text-align: right;
 	color: white;
-	border: 1px black solid;
 	padding: 20px;
 	clear: both;
 }
@@ -90,22 +87,23 @@ body {
 
 h1 {
 	padding-left: 10px;
-	color: #c3af7c;
+	color: #E3BB5D;
 	font-family: 'Playfair Display', bold;
 	font-size: 48px;
 	float: left;
 }
 
 h2 {
-	color: #15504e;
+	color: #D48197;
 	text-align: center;
 	font-family: helvetica neue, light;
 	font-size: 2em;
+	width: 100%;
 	clear: both;
 }
 
 h3 {
-	color: #735944;
+	color: #508582;
 	text-align: center;
 	font-size: 2em;
 }
@@ -114,20 +112,29 @@ p {
 	color: gray;
 	text-align: center;
 	font-family: helvetica neue, light;
-	line-height: 1.8em;
+	line-height: 2em;
 	padding: 20px;
+	clear: both;
+}
+
+#products {
+	width: 100%;
+	margin: 2em;
 }
 
 .column {
-	float: left;
-	width: 33.33%;
+ 	float: left;
+	width: 30%;
+	margin: 1em;
+	text-align: center;
+	border: 0 none;
+	display: inline;
+	max-width: 30%;
 }
 
 
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+img {
+	float: none;
 }
 
 ul {
@@ -142,18 +149,14 @@ div {
 	padding: 50px;
 }
 
-.button {
-	background-color: #15504e;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2em;
+.textcontact {
+	width: 100;
+	display: block;
 }
 
-.button:hover {
-	background-color: #cae8de;
-    color: #15504e;
+@media only screen and (max-width : 768px) {
+	.column img {
+		display: block;
+	}
+
 }
